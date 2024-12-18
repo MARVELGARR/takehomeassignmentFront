@@ -14,11 +14,11 @@ type PropertiesResponse = {
   data: Property[];
 };
 
-const baseUrl ="http://localhost:3002"
+const baseUrl ="http://localhost:3002" 
 
 const getProperties = async (): Promise<Property[]> => {
   try {
-    const res = await fetch(`${baseUrl}/api/properties`, {
+    const res = await fetch(`https://takehomeassignmentbackend.vercel.app/api/properties`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
